@@ -1,0 +1,43 @@
+group = 'com.nearsoft.workshop'
+version = '1.0.0'
+
+buildscript {
+    repositories {
+        maven { url "http://clojars.org/repo" }
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'clojuresque:clojuresque:1.7.0'
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.0'
+    }
+}
+
+apply plugin: 'application'
+apply plugin: 'clojure'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+repositories {
+    mavenCentral()
+    maven { url "http://clojars.org/repo" }
+}
+
+dependencies {
+    compile 'org.clojure:clojure:1.7.0'
+}
+
+// NOTE: You *must* enable AOT (Ahead-of-Time) compilation in order to use a Clojure class as the main class
+clojure.aotCompile = true
+clojure.warnOnReflection = true
+
+jar {
+    manifest.attributes("Main-Class": "foo")
+}
+
+uberjar {
+    manifest.attributes("Main-Class": "foo")
+}
+
+mainClassName = "foo"
+uberjar.enabled = true
