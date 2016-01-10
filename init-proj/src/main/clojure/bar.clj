@@ -1,2 +1,0 @@
-(ns bar
-	(:gen-class))
