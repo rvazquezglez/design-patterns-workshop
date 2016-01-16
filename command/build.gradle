@@ -14,6 +14,7 @@ buildscript {
 }
 
 apply plugin: 'application'
+apply plugin: 'java'
 apply plugin: 'scala'
 apply plugin: 'clojure'
 
@@ -25,6 +26,8 @@ repositories {
 dependencies {
     compile 'org.clojure:clojure:1.7.0'
     compile 'org.scala-lang:scala-library:2.11.7'
+    compile 'org.slf4j:slf4j-log4j12:1.7.13'
+    testCompile 'junit:junit:4.12'
 }
 
 // NOTE: You *must* enable AOT (Ahead-of-Time) compilation in order to use a Clojure class as the main class

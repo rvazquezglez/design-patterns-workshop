@@ -1,34 +1,39 @@
 package com.nearsoft.workshop.command;
 
-public class CeilingFan {
-    public static final int HIGH = 3;
-    public static final int MEDIUM = 2;
-    public static final int LOW = 1;
-    public static final int OFF = 0;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-    private int speed;
+public class CeilingFan {
+
+    // @Slf4j annotation in Lombok or Groovy
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
+
+    public enum CeilingFanSpeed {OFF, LOW, MEDIUM, HIGH}
+
+    private CeilingFanSpeed speed;
 
     public CeilingFan() {
-        this.speed = 0;
+        this.speed = CeilingFanSpeed.OFF;
+        log.debug("Created CeilingFan");
     }
 
     public void high() {
-        this.speed = HIGH;
+        this.speed = CeilingFanSpeed.HIGH;
+        log.debug("CeilingFan setted to HIGH");
     }
 
     public void medium() {
-        this.speed = MEDIUM;
+        this.speed = CeilingFanSpeed.MEDIUM;
+        log.debug("CeilingFan setted to MEDIUM");
     }
 
     public void low() {
-        this.speed = LOW;
+        this.speed = CeilingFanSpeed.LOW;
+        log.debug("CeilingFan setted to LOW");
     }
 
     public void off() {
-        this.speed = OFF;
-    }
-
-    public int getSpeed() {
-        return speed;
+        this.speed = CeilingFanSpeed.OFF;
+        log.debug("CeilingFan setted to OFF");
     }
 }

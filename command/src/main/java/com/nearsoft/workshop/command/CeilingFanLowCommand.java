@@ -8,7 +8,6 @@ public class CeilingFanLowCommand extends CeilingFanAbstractCommand {
 
     @Override
     public void execute() {
-        super.execute();
         ceilingFan.low();
     }
 }

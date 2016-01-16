@@ -7,7 +7,6 @@ public class CeilingFanMediumCommand extends CeilingFanAbstractCommand {
 
     @Override
     public void execute() {
-        super.execute();
         ceilingFan.medium();
     }
 }
