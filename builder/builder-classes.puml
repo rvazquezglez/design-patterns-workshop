@@ -1,0 +1,21 @@
+@startuml
+interface Builder{
++buildPart1()
++buildPart2()
++buildPart3()
+}
+class ConcreteBuilder{
++buildPart1()
++buildPart2()
++buildPart3()
++getResult()
+}
+class Director {
++Builder builder
++construct()
+}
+note left: this.builder.buildPart1().buildPart2()
+Builder <|-- ConcreteBuilder
+Director *-right- Builder
+ConcreteBuilder .left.> Product : creates
+@enduml
