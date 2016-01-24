@@ -1,26 +1,14 @@
-package com.nearsoft.workshop.builder;
+package com.nearsoft.workshop.java;
 
 import org.junit.Test;
 
-import static org.hamcrest.Matchers.isEmptyOrNullString;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 public class ImmutableProductTest {
 
     @Test
-    public void testBuilderDefaultValues() throws Exception {
-
-        ImmutableProduct product = ImmutableProduct.builder().build();
-
-        assertThat(product.getDescription(), isEmptyOrNullString());
-        assertThat(product.getName(), isEmptyOrNullString());
-        assertThat(product.getPrice(), is(0.0));
-        assertThat(product.getSku(), isEmptyOrNullString());
-    }
-
-    @Test
-    public void testBuilderNoDefaultValues() throws Exception {
+    public void testBuilder() throws Exception {
 
         ImmutableProduct product = ImmutableProduct.builder() //
                 .withName("Tonayan") //

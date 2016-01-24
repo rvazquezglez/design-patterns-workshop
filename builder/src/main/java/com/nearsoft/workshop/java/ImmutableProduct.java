@@ -1,4 +1,4 @@
-package com.nearsoft.workshop.builder;
+package com.nearsoft.workshop.java;
 
 public class ImmutableProduct {
     private final double price;
