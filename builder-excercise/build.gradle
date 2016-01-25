@@ -29,7 +29,8 @@ dependencies {
     compile 'org.slf4j:slf4j-log4j12:1.7.13'
     testCompile 'junit:junit:4.12'
     testCompile 'org.hamcrest:hamcrest-all:1.3'
-
+    testCompile "org.scalatest:scalatest_2.11:2.2.6"
+    testCompile "org.mockito:mockito-core:1.+"
 }
 
 // NOTE: You *must* enable AOT (Ahead-of-Time) compilation in order to use a Clojure class as the main class
