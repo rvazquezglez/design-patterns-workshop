@@ -1,7 +1,5 @@
 package com.nearsoft.workshop.strategy.scala
 
-import java.util.Arrays
-
 import com.nearsoft.workshop.strategy.scala.character._
 import org.scalatest.{FlatSpec, Matchers}
 import org.slf4j.LoggerFactory
@@ -32,6 +30,6 @@ class CharacterSpec extends FlatSpec with Matchers {
     val characters = List(king, queen, troll, secondTroll, knight, secondKnight)
 
     characters.foreach(_.fight)
-    
+
   }
 }
