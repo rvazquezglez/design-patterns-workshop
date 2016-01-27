@@ -1,5 +1,5 @@
-# Command Pattern exercise
-## Cash Register
+# Strategy Pattern exercise
+## Person validator
 Your task is to implement a person validator with a Strategy Command. You can extend the validator class to validate different aspects from the Person object
 
 With a traditional OO focus you'll get something like the next diagram:
