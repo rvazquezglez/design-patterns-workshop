@@ -1,0 +1,31 @@
+@startuml
+class Person{
+firstName
+middleName
+lastName
+}
+
+class PersonValidator {
+    +validate()
+}
+
+class FullNameValidator {
+    +validate()
+}
+
+class FirstNameValidator {
+    +validate()
+}
+
+class PersonCollector {
+    personValidator
+    listOfPeople
+}
+
+PersonValidator -left-> Person : validates
+PersonCollector -left-> PersonValidator: has a
+FullNameValidator -up-|> PersonValidator
+FirstNameValidator -up-|> PersonValidator
+
+
+@enduml
