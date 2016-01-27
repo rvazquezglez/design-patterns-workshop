@@ -1,0 +1,22 @@
+@startuml
+interface Command {
+    execute()
+}
+class CashRegister{
+    total
+    addCash()
+    getTotal()
+}
+class Purchase{
+    cashRegister
+    amount
+    execute()
+}
+class PurchaseInvoker {
+    executedPurchases
+    replayPurchases()
+}
+Purchase -left-* CashRegister : has a
+Command <|-down- Purchase
+PurchaseInvoker <-down- Purchase : passed to
+@enduml
