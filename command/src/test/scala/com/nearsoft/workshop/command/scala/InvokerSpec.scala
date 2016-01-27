@@ -10,7 +10,7 @@ class InvokerSpec extends FlatSpec with Matchers {
   val invoker = new Invoker
   val ceilingFan = new CeilingFan
 
-  "A invoker" should "invoke the commands passed to it" in {
+  "A invoker" should "execute the commands passed to it" in {
     invoker.executeCommand(()=> ceilingFan.low)
     invoker.executeCommand(()=> ceilingFan.off)
   }
