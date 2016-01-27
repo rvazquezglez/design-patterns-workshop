@@ -1,0 +1,14 @@
+@startuml
+interface Strategy {
+    +execute()
+}
+class ConcreteStrategy1 {
+    +execute()
+}
+class ConcreteStrategy2 {
+    +execute()
+}
+Context *-right- Strategy
+Strategy <|-- ConcreteStrategy1
+Strategy <|-- ConcreteStrategy2
+@enduml
