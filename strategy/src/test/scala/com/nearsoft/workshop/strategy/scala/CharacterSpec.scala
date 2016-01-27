@@ -25,7 +25,7 @@ class CharacterSpec extends FlatSpec with Matchers {
     knight.setWeaponBehaviour(() => "cutting with katana.")
 
     val secondKnight: Character = new Knight
-    secondKnight.setWeaponBehaviour(() => "writing with my pencil.")
+    secondKnight.setWeaponBehaviour(() => "writing hatred letters with my pencil.")
 
     val characters = List(king, queen, troll, secondTroll, knight, secondKnight)
 
