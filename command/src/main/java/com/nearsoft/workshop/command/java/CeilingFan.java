@@ -1,8 +1,9 @@
-package com.nearsoft.workshop.command;
+package com.nearsoft.workshop.command.java;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// Receiver
 public class CeilingFan {
 
     // @Slf4j annotation in Lombok or Groovy

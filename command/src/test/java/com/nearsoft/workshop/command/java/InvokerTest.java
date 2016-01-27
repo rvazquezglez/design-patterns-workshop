@@ -1,10 +1,11 @@
-package com.nearsoft.workshop.command;
+package com.nearsoft.workshop.command.java;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// Client
 public class InvokerTest {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());

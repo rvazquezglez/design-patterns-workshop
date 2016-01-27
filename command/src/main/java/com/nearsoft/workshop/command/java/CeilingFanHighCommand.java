@@ -1,4 +1,4 @@
-package com.nearsoft.workshop.command;
+package com.nearsoft.workshop.command.java;
 
 public class CeilingFanHighCommand extends CeilingFanAbstractCommand {
 

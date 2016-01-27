@@ -1,4 +1,4 @@
-package com.nearsoft.workshop.command;
+package com.nearsoft.workshop.command.java;
 
 import java.util.ArrayList;
 import java.util.List;
