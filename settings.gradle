@@ -1,0 +1,7 @@
+include 'builder'
+include 'builder-excercise'
+include 'command'
+include 'command-excercise'
+include 'strategy'
+include 'strategy-exercise'
+include 'decorator'
