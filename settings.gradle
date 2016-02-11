@@ -5,3 +5,5 @@ include 'command-excercise'
 include 'strategy'
 include 'strategy-exercise'
 include 'decorator'
+
+include 'observer-chat'
