@@ -7,3 +7,4 @@ include 'strategy-exercise'
 include 'decorator'
 
 include 'observer-chat'
+include 'eventbus-chat'

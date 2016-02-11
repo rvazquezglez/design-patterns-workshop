@@ -1,0 +1,17 @@
+group = 'com.nearsoft.workshop'
+version = '1.0.0'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "io.vertx:vertx-core:3.2.1"
+    compile "io.vertx:vertx-lang-groovy:3.2.1"
+    compile 'io.vertx:vertx-web:3.2.1'
+    compile 'com.j2html:j2html:0.7'
+    compile 'org.slf4j:slf4j-log4j12:1.7.13'
+    testCompile 'junit:junit:4.12'
+}
