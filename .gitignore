@@ -3,6 +3,7 @@
 /observer-chat/.idea
 /.idea
 # Created by .ignore support plugin (hsz.mobi)
+/visitor/build
 /eventbus-chat/eventbus-chat.iml
 /eventbus-chat/build
 /eventbus-chat/src/main/groovy/.vertx
