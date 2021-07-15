@@ -1,4 +1,5 @@
 #Builder pattern exercise
+
 ##Refactoring test with telescoping constructor anti-pattern
 
 Company S Inc has a legacy system where it has a GodObject from a class called 
